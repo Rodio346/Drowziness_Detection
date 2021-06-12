@@ -8,8 +8,8 @@ mixer.init()
 sound = mixer.Sound('alarm.wav')
 
 face = cv2.CascadeClassifier('haar cascade files\haarcascade_frontalface_alt.xml')
-left_eye = cv2.CascadeClassifier('haar cascade files\haarcascade_lefteye_2splits.xml')
-right_eye = cv2.CascadeClassifier('haar cascade files\haarcascade_righteye_2splits.xml')
+leye = cv2.CascadeClassifier('haar cascade files\haarcascade_lefteye_2splits.xml')
+reye = cv2.CascadeClassifier('haar cascade files\haarcascade_righteye_2splits.xml')
 
 
 
@@ -32,8 +32,8 @@ while(True):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     
     faces = face.detectMultiScale(gray,minNeighbors=5,scaleFactor=1.1,minSize=(25,25))
-    left_eye = left_eye.detectMultiScale(gray)
-    right_eye = right_eye.detectMultiScale(gray)
+    left_eye = leye.detectMultiScale(gray)
+    right_eye = reye.detectMultiScale(gray)
 
     cv2.rectangle(frame, (0,height-50) , (200,height) , (0,0,0) , thickness=cv2.FILLED )
 
