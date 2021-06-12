@@ -19,4 +19,4 @@ Now the moment you start to show drowziness the program will start counting and 
 1. It will help drivers for stay awake while making a long run ( for that it has to be installed on rasp with camera)
 2. It will help students by reducing their slacking off 
 3. Anyone who work with a laptop with webcam on it can use this to optimize himself
-! [](i_sleep. gif)
+! [](i_sleep.gif)
