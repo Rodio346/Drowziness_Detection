@@ -33,7 +33,7 @@ while(True):
     
     faces = face.detectMultiScale(gray,minNeighbors=5,scaleFactor=1.1,minSize=(25,25))
     left_eye = left_eye.detectMultiScale(gray)
-    right_eye =  right_eye.detectMultiScale(gray)
+    right_eye = right_eye.detectMultiScale(gray)
 
     cv2.rectangle(frame, (0,height-50) , (200,height) , (0,0,0) , thickness=cv2.FILLED )
 
